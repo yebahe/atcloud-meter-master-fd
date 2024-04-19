@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
  * @Project：gpcloud-meter
  * @name：StressCaseController
  * @Date：2024-01-18 10:25
- * @Filename：StressCaseController ： 测试用例接口
+ * @Filename：StressCaseController
  */
 @RestController
 @RequestMapping("/api/v1/stress_case")
