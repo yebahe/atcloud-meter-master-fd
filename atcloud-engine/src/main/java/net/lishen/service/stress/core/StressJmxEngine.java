@@ -30,7 +30,7 @@ import java.util.List;
  * @Project：atcloud-meter
  * @name：StressJmxEngine
  * @Date：2024-01-22 11:41
- * @Filename：StressJmxEngine
+ * @Filename：StressJmxEngine 模板方法的实现类
  */
 @Slf4j
 public class StressJmxEngine extends BaseStressEngine{

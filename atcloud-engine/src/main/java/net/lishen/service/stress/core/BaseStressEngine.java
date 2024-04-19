@@ -37,7 +37,7 @@ import java.util.Objects;
  * @Project：atcloud-meter
  * @name：BaseStressEngine
  * @Date：2024-01-22 11:38
- * @Filename：BaseStressEngine
+ * @Filename：BaseStressEngine  模板方法
  */
 @Data
 @Slf4j
@@ -70,7 +70,7 @@ public abstract  class BaseStressEngine {
      */
     protected ApplicationContext applicationContext;
     /**
-     * 模板方法
+     * 模板方法 ，具体的开启压测的逻辑交给子类
      */
     public void startStressTest(){
         //初始化测试引擎
