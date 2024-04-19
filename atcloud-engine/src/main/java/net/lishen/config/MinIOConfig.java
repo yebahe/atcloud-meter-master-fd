@@ -32,6 +32,7 @@ public class MinIOConfig {
     private String bucketName;
     @Bean
     public MinioClient getMinioClient() {
+        // 客户端xiang
         return MinioClient.builder()
                 .endpoint(endpoint)
                 .credentials(accessKey, secretKey)

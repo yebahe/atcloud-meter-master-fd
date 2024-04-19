@@ -59,6 +59,7 @@ public class FileServiceImpl implements FileService {
 
         return url;
     }
+
     @Async("threadPoolTaskExecutor")
     @Override
     public void uploadFile(MultipartFile file, String fileName) {

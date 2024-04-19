@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @Project：atcloud-meter
  * @name：FileController
  * @Date：2024-01-20 22:11
- * @Filename：FileController
+ * @Filename：FileController ： 文件上传和下载
  */
 @RestController
 @RequestMapping("/api/v1/file")
