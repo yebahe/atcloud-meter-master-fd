@@ -37,13 +37,17 @@ import java.util.Objects;
  * @Project：atcloud-meter
  * @name：BaseStressEngine
  * @Date：2024-01-22 11:38
- * @Filename：BaseStressEngine  模板方法
+ * @Filename：BaseStressEngine  执行引擎类
  */
 @Data
 @Slf4j
 public abstract  class BaseStressEngine {
 
-
+/**
+ *
+ *
+ *
+ */
     /**
      * 最终的测试计划
      */
