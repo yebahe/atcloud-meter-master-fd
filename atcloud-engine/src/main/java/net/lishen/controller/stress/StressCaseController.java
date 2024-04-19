@@ -54,6 +54,20 @@ public class StressCaseController {
         return JsonData.buildSuccess(stressCaseService.update(req));
     }
 
+    /**
+     * 执行测试用例的接口、
+     * 1、查询用例详情
+     * 2、初始化测试报告
+     * 3、判断压测类型
+     * 4、初始化测试引擎、组装测试计划
+     * 5、执行压测
+     * 6、发送压测结果
+     * 7、清理数据
+     * 8、通知压测结果
+     * @param projectId
+     * @param caseId
+     * @return
+     */
     //execute
     @GetMapping("/execute")
     public JsonData execute(@RequestParam("projectId") Long projectId, @RequestParam("id") Long caseId) {
