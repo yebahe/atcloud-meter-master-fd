@@ -18,6 +18,7 @@ public interface ResultSenderService {
      * @param caseInfoDTO
      * @param reportTypeEnum
      * @param result
+     *
      */
     void sendResult(CaseInfoDTO caseInfoDTO, ReportTypeEnum reportTypeEnum, String result);
 

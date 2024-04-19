@@ -47,6 +47,7 @@ public class KafkaResultSenderServiceImpl  implements ResultSenderService {
 
     }
 
+
     /**
      * 发送压测结果明细
      * @param caseInfoDTO

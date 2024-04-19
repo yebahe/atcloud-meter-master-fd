@@ -94,6 +94,10 @@ public class StressCaseServiceImpl implements StressCaseService {
         if(stressCaseDO!=null){
 
             //2、初始化测试报告 （包括概述和明细）
+            /*
+            建造者模式来创建对象，类似于使用new关键字实例化一个对象。建造者模式的优势在于可以通过链式调用方法来设置对象的属性，
+            使代码更加清晰易读，并且可以方便地处理对象的可选参数。最后，调用.build()方法来构建对象并返回
+             */
             ReportSaveReq reportSaveReq = ReportSaveReq.builder().projectId(projectId).caseId(caseId)
                     .startTime(System.currentTimeMillis())
                     .executeState(ReportStateEnum.EXECUTING.name())

@@ -27,15 +27,17 @@ import java.util.Objects;
  * @name：EngineSimpleCollector
  * @Date：2024-01-21 23:06
  * @Filename：EngineSimpleCollector
+ * 压测结果收集器
  */
 @Slf4j
 public class EngineSampleCollector extends ResultCollector {
 
-    //一个线程组多个请求，用map区分
+    //一个线程组多个请求，用map区分,一个线程组下面可能有多个不同的请求，因此需要区分不同的统计数据类
     //SamplingStatCalculator是用来计算压测报告的一些相关指标的
     private Map<String, SamplingStatCalculator> calculatorMap = new HashMap<>();
 
 
+    //
     private ResultSenderService resultSenderService;
 
     private ReportDTO reportDTO;
@@ -48,6 +50,13 @@ public class EngineSampleCollector extends ResultCollector {
         super();
     }
 
+    /**
+     *
+     * @param stressCaseDO
+     * @param summer
+     * @param resultSenderService
+     * @param reportDTO
+     */
     public EngineSampleCollector(StressCaseDO stressCaseDO, Summariser summer, ResultSenderService resultSenderService, ReportDTO reportDTO) {
         super(summer);
         this.stressCaseDO = stressCaseDO;
@@ -58,12 +67,12 @@ public class EngineSampleCollector extends ResultCollector {
     @Override
     public void sampleOccurred(SampleEvent event) {
         super.sampleOccurred(event);
-        //采样器结果
+        //采样器结果 ---
         SampleResult result = event.getResult();
         //请求名称，用作key
         String sampleLabel = result.getSampleLabel();
 
-        //针对不同的请求，分别计算压测报告的指标
+        //针对不同的请求，实例化不同的收集器对象 分别计算压测报告的指标
         SamplingStatCalculator calculator = calculatorMap.get(sampleLabel);
         if (calculator == null) {
             calculator = new SamplingStatCalculator(sampleLabel);

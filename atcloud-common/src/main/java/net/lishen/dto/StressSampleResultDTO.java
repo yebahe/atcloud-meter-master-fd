@@ -21,6 +21,7 @@ import lombok.NoArgsConstructor;
 public class StressSampleResultDTO {
 
 
+
     /**
      * 所属报告ID 结果ID
      */
