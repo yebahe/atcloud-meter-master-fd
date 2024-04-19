@@ -21,6 +21,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ReportUpdateReq {
 
+
     /**
      * 测试报告id
      */

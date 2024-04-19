@@ -23,7 +23,8 @@ public class StressTestUtil {
         try{
             //这里获取不到，先注释掉，手写代码
 //            String path = StressTestUtil.class.getResource("jmeter").getPath();
-            String path = "C:\\Users\\联想\\Desktop\\my_project\\atcloud-meter\\atcloud-engine\\src\\main\\resources\\jmeter";
+            //1、改为电脑上的绝对路径
+            String path = "E:\\Java\\IdeaProjects\\atcloud-meter-master-fd\\atcloud-engine\\src\\main\\resources\\jmeter";
             return path;
         }catch (Exception e){
             throw new RuntimeException(e);
