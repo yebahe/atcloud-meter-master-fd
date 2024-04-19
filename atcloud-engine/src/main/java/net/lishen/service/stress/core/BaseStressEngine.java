@@ -81,7 +81,7 @@ public abstract  class BaseStressEngine {
         this.initStressEngine();
 
         //组装测试计划
-        //抽象方法
+        //抽象方法 ===获取测试计划
         this.assembleTestPlan();
 
         //把hashTree生成jmx文件方便本地调试、

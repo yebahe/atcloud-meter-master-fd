@@ -49,12 +49,9 @@ public class StressJmxEngine extends BaseStressEngine{
     @Override
     public void assembleTestPlan() {
         File jmxFile = null;
-
         //测试计划
         HashTree testPlanTree = new HashTree();
-
         try{
-
             jmxFile = File.createTempFile("jmeter-script",".jmx");
 
             try(FileWriter fileWriter = new FileWriter(jmxFile)){
@@ -68,18 +65,13 @@ public class StressJmxEngine extends BaseStressEngine{
                 fileWriter.close();
                 //加载测试计划树 jmx脚本
                 testPlanTree = SaveService.loadTree(jmxFile);
-
                 //转换测试计划树
                 JMeter.convertSubTree(testPlanTree,false);
-
                 ResultSenderService senderService = applicationContext.getBean(KafkaResultSenderServiceImpl.class);
-
                 //获取自定义结果收集器
                 EngineSampleCollector sampleCollector = super.getSampleCollector(senderService);
                 //添加到测试计划
                 testPlanTree.add(testPlanTree.getArray()[0],sampleCollector);
-
-
                 //处理参数化相关逻辑
                 parseParamFilesToScript(testPlanTree);
             }

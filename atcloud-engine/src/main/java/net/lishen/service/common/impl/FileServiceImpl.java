@@ -47,11 +47,11 @@ public class FileServiceImpl implements FileService {
     @Autowired
     @Lazy
     private FileService fileService;
+
     @Override
     public String upload(MultipartFile file) {
         //获取文件名
         String fileName = CustomFileUtil.getFileName(file.getOriginalFilename());
-
         //异步上传
         //代理类对行，为了使异步生效
         fileService.uploadFile(file, fileName);
@@ -87,6 +87,11 @@ public class FileServiceImpl implements FileService {
 
     }
 
+    /**
+     * 文件上传后不能公开读写 ，文件临时访问URL接口开发
+     * @param romeFilaPath
+     * @return
+     */
     @Override
     public String getTempAccessFileUrl(String romeFilaPath) {
 

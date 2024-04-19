@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @Filename：FileService
  */
 public interface FileService {
+
     String upload(MultipartFile file);
 
     /**
