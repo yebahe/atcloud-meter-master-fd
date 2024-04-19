@@ -4,7 +4,7 @@ package net.lishen.config;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.config
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：KafkaTopicConfig
  * @Date：2024-02-22 20:04
  * @Filename：KafkaTopicConfig

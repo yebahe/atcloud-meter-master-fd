@@ -9,7 +9,7 @@ import java.io.File;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.util
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressTestUtil
  * @Date：2024-01-19 15:21
  * @Filename：StressTestUtil
@@ -23,7 +23,7 @@ public class StressTestUtil {
         try{
             //这里获取不到，先注释掉，手写代码
 //            String path = StressTestUtil.class.getResource("jmeter").getPath();
-            String path = "C:\\Users\\联想\\Desktop\\my_project\\gpcloud-meter\\gpcloud-engine\\src\\main\\resources\\jmeter";
+            String path = "C:\\Users\\联想\\Desktop\\my_project\\atcloud-meter\\atcloud-engine\\src\\main\\resources\\jmeter";
             return path;
         }catch (Exception e){
             throw new RuntimeException(e);

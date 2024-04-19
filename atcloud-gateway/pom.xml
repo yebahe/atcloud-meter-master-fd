@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.joseph</groupId>
-    <artifactId>gpcloud-gateway</artifactId>
+    <artifactId>atcloud-gateway</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

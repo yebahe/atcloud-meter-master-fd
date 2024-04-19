@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.config
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：MinIOConfig
  * @Date：2024-01-20 22:02
  * @Filename：MinIOConfig

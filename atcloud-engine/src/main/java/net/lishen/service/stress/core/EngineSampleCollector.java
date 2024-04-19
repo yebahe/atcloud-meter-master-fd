@@ -23,7 +23,7 @@ import java.util.Objects;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.service.stress.core
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：EngineSimpleCollector
  * @Date：2024-01-21 23:06
  * @Filename：EngineSimpleCollector

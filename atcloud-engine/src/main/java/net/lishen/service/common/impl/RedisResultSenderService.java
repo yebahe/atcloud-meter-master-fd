@@ -8,7 +8,7 @@ import net.lishen.service.common.ResultSenderService;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.service.common.impl
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：RedisResultSenderService
  * @Date：2024-01-21 22:52
  * @Filename：RedisResultSenderService

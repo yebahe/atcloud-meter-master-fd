@@ -9,7 +9,7 @@ import java.util.List;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.dto.common.stress
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressCaseModuleDTO
  * @Date：2024-01-18 22:31
  * @Filename：StressCaseModuleDTO

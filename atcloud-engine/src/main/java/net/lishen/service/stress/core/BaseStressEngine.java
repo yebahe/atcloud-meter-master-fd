@@ -34,7 +34,7 @@ import java.util.Objects;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.service.stress.core
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：BaseStressEngine
  * @Date：2024-01-22 11:38
  * @Filename：BaseStressEngine

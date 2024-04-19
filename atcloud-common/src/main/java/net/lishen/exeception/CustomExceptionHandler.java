@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.exeception
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：CustomExceptionHandler
  * @Date：2023-12-29 9:22
  * @Filename：CustomExceptionHandler

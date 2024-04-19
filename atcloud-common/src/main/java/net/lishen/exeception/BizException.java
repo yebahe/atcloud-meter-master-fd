@@ -7,7 +7,7 @@ import net.lishen.enums.BizCodeEnum;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.exeception
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：BizException
  * @Date：2023-12-29 9:06
  * @Filename：BizException

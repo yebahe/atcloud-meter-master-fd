@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.dto
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressSampleResultDTO
  * @Date：2024-01-22 10:08
  * @Filename：StressSampleResultDTO

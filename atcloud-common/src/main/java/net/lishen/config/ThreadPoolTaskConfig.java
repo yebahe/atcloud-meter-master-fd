@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.config
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：ThreadPoolTaskConfig
  * @Date：2024-01-20 22:39
  * @Filename：ThreadPoolTaskConfig

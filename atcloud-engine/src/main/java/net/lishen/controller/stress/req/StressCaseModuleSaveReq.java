@@ -6,7 +6,7 @@ import lombok.Data;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.controller.stress.req
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressCaseModuleSaveReq
  * @Date：2024-01-19 14:22
  * @Filename：StressCaseModuleSaveReq

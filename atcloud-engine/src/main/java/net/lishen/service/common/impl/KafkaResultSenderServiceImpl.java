@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.service.common.impl
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：KafkaResultSenderServiceImpl
  * @Date：2024-01-21 22:54
  * @Filename：KafkaResultSenderServiceImpl

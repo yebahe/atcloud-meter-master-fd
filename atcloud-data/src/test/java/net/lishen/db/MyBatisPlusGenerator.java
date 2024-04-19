@@ -15,7 +15,7 @@ import java.util.Collections;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.db
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：MyBatisPlusGenerator
  * @Date：2024-01-06 22:02
  * @Filename：MyBatisPlusGenerator
@@ -28,7 +28,7 @@ public class MyBatisPlusGenerator {
         String userName = "root";
         String password = "xdclass.net180";
         String serverInfo = "43.138.11.85:3306";
-        String targetModuleNamePath = "/gpcloud-data";
+        String targetModuleNamePath = "/atcloud-data";
         String dbName = "test_data";
         String[] tables = {
 //                "report", "report_detail_stress"

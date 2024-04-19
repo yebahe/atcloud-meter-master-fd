@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.joseph</groupId>
-    <artifactId>gpcloud-meter</artifactId>
+    <artifactId>atcloud-meter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <parent>
@@ -15,11 +15,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modules>
-        <module>gpcloud-common</module>
-        <module>gpcloud-account</module>
-        <module>gpcloud-engine</module>
-        <module>gpcloud-data</module>
-        <module>gpcloud-gateway</module>
+        <module>atcloud-common</module>
+        <module>atcloud-account</module>
+        <module>atcloud-engine</module>
+        <module>atcloud-data</module>
+        <module>atcloud-gateway</module>
     </modules>
 
     <properties>

@@ -6,7 +6,7 @@ import lombok.Data;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.controller.common.req
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：EnvironmentUpdateReq
  * @Date：2024-01-07 21:30
  * @Filename：EnvironmentUpdateReq

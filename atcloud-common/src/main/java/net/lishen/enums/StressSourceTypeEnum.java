@@ -4,7 +4,7 @@ package net.lishen.enums;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.enums
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressSourceTypeEnum
  * @Date：2024-01-20 19:04
  * @Filename：StressSourceTypeEnum

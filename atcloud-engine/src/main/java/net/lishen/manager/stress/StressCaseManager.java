@@ -8,7 +8,7 @@ import net.lishen.model.StressCaseDO;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.manager.stress
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：StressCaseManager
  * @Date：2024-01-18 11:16
  * @Filename：StressCaseManager

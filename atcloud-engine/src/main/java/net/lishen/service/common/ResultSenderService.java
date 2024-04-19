@@ -7,7 +7,7 @@ import net.lishen.enums.ReportTypeEnum;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.controller.common
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：TestResultSenderService
  * @Date：2024-01-21 22:37
  * @Filename：TestResultSenderService

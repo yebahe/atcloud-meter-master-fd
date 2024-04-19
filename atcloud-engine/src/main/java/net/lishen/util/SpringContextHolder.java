@@ -8,7 +8,7 @@ import java.util.Map;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.util
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：SpringContextHolder
  * @Date：2024-03-08 15:16
  * @Filename：SpringContextHolder

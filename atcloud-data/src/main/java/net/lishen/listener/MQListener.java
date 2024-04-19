@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.listener
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：MQListener
  * @Date：2024-02-22 20:03
  * @Filename：MQListener

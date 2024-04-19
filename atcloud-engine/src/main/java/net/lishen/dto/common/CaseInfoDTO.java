@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
  * @Author：li.shen
  * @bolg：
  * @Package：net.joseph.dto.common
- * @Project：gpcloud-meter
+ * @Project：atcloud-meter
  * @name：CaseInfoDTO
  * @Date：2024-01-21 22:45
  * @Filename：CaseInfoDTO
