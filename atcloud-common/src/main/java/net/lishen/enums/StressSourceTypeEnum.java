@@ -11,6 +11,7 @@ package net.lishen.enums;
  */
 public enum StressSourceTypeEnum {
 
+
     /**
      * 在线生成
      */

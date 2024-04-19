@@ -92,6 +92,7 @@ public class StressCaseServiceImpl implements StressCaseService {
         StressCaseDO stressCaseDO = stressCaseManager.findById(projectId, caseId);
 
         if(stressCaseDO!=null){
+
             //2、初始化测试报告 （包括概述和明细）
             ReportSaveReq reportSaveReq = ReportSaveReq.builder().projectId(projectId).caseId(caseId)
                     .startTime(System.currentTimeMillis())
@@ -102,6 +103,7 @@ public class StressCaseServiceImpl implements StressCaseService {
             JsonData jsonData = reportFeignService.save(reportSaveReq);
             if(jsonData.isSuccess()){
                 ReportDTO reportDTO = jsonData.getData(ReportDTO.class);
+
                 //3、判断压测类型是jmx还是 simple在线组装
                 if(StressSourceTypeEnum.JMX.name().equals(stressCaseDO.getStressSourceType())){
                     runJmxStressCase(stressCaseDO,reportDTO);

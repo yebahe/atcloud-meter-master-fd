@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 @FeignClient("data-service")
 public interface ReportFeignService {
+
     /**
      * 初始化测试报告接口
      */
