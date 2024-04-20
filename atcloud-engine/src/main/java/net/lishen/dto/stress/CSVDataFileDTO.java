@@ -5,9 +5,11 @@ import lombok.Data;
 /**
  * @Author：li.shen
  * 映射relation字段到这个对象
+ * 可变参数
  */
 @Data
 public class CSVDataFileDTO {
+
     //文件名
     private String name;
     //远程路径

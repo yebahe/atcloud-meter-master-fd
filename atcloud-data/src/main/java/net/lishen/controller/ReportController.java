@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
+
 /**
  * @Author：li.shen
  * @bolg：
@@ -40,5 +45,8 @@ public class  ReportController {
         reportService.updateReportState(req);
         return JsonData.buildSuccess();
     }
+    // 搜索函数
+    private static  void dfs(int node, ArrayList<Integer>[] uv, boolean [] visited , String str , ArrayList<Long> bw){
 
+    }
 }

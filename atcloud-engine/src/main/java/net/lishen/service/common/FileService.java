@@ -1,5 +1,6 @@
 package net.lishen.service.common;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -10,7 +11,9 @@ import org.springframework.web.multipart.MultipartFile;
  * @name：FileService
  * @Date：2024-01-20 22:13
  * @Filename：FileService
+ *
  */
+@Service
 public interface FileService {
 
     String upload(MultipartFile file);

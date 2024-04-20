@@ -110,8 +110,6 @@ public class FileServiceImpl implements FileService {
             throw new RuntimeException("获得临时文件访问连接失败getPresignedObjectUrl fail");
         }
 
-
-
     }
 
     @Override

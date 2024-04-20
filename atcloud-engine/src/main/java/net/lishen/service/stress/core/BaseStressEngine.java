@@ -20,6 +20,7 @@ import org.apache.jmeter.util.JMeterUtils;
 import org.apache.jorphan.collections.HashTree;
 import org.apache.jorphan.collections.SearchByClass;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,6 +40,7 @@ import java.util.Objects;
  * @Date：2024-01-22 11:38
  * @Filename：BaseStressEngine  执行引擎类
  */
+@Component
 @Data
 @Slf4j
 public abstract  class BaseStressEngine {

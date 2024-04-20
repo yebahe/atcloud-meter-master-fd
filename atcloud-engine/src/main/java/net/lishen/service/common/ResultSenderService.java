@@ -2,6 +2,7 @@ package net.lishen.service.common;
 
 import net.lishen.dto.common.CaseInfoDTO;
 import net.lishen.enums.ReportTypeEnum;
+import org.springframework.stereotype.Service;
 
 /**
  * @Author：li.shen
@@ -12,6 +13,7 @@ import net.lishen.enums.ReportTypeEnum;
  * @Date：2024-01-21 22:37
  * @Filename：TestResultSenderService
  */
+@Service
 public interface ResultSenderService {
     /**
      * 发送测试结果 mq
