@@ -32,19 +32,15 @@ import java.util.Objects;
 @Slf4j
 public class EngineSampleCollector extends ResultCollector {
 
-    //一个线程组多个请求，用map区分,一个线程组下面可能有多个不同的请求，因此需要区分不同的统计数据类
+    //一个线程组 多个请求，用map区分,一个线程组下面可能有多个不同的请求，因此需要区分不同的统计数据类
     //SamplingStatCalculator是用来计算压测报告的一些相关指标的
     private Map<String, SamplingStatCalculator> calculatorMap = new HashMap<>();
-
-
     //
     private ResultSenderService resultSenderService;
 
     private ReportDTO reportDTO;
 
     private StressCaseDO stressCaseDO;
-
-
 
     public EngineSampleCollector() {
         super();
@@ -63,7 +59,6 @@ public class EngineSampleCollector extends ResultCollector {
         this.resultSenderService = resultSenderService;
         this.reportDTO = reportDTO;
     }
-
     @Override
     public void sampleOccurred(SampleEvent event) {
         super.sampleOccurred(event);
