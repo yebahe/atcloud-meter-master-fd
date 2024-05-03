@@ -15,7 +15,9 @@ import org.apache.jmeter.save.SaveService;
 import org.apache.jmeter.testelement.TestElement;
 import org.apache.jorphan.collections.HashTree;
 import org.apache.jorphan.collections.SearchByClass;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -33,7 +35,11 @@ import java.util.List;
  * @Filename：StressJmxEngine 模板方法的实现类
  */
 @Slf4j
+@Component
 public class StressJmxEngine extends BaseStressEngine{
+
+    @Autowired
+    private  FileService fileService;
 
     public StressJmxEngine(){
 
@@ -56,7 +62,7 @@ public class StressJmxEngine extends BaseStressEngine{
 
             try(FileWriter fileWriter = new FileWriter(jmxFile)){
                 //读取远程文件写道本地jmxFile
-                FileService fileService = applicationContext.getBean(FileService.class);
+
                 String url = fileService.getTempAccessFileUrl(stressCaseDO.getJmxUrl());
                 String content = CustomFileUtil.readRemoteFile(url);
                 fileWriter.write(content);
@@ -105,7 +111,7 @@ public class StressJmxEngine extends BaseStressEngine{
      * @param testPlanTree
      */
     public void parseParamFilesToScript(HashTree testPlanTree) {
-        FileService fileService = applicationContext.getBean(FileService.class);
+
         //这个是一个json数组，每个元素对应可变参数csv文件
         String relation = stressCaseDO.getRelation();
 
@@ -121,14 +127,12 @@ public class StressJmxEngine extends BaseStressEngine{
         Collection<TestElement> searchResults = testElementVisitor.getSearchResults();
 
         //提取jmx脚本里的csv的配置类存储到list
-
         for(TestElement testElement : searchResults){
             if(testElement instanceof CSVDataSet csvDataSet) {
                 boolean enabled = csvDataSet.getProperty("TestElement.enabled").getBooleanValue();
                 if (enabled) {
                     csvDataSetList.add((CSVDataSet) testElement);
                 }
-
             }
         }
         //遍历jmx中的csv文件，根据fileName进行关联
