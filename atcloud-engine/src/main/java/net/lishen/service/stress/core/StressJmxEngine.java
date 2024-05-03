@@ -61,7 +61,7 @@ public class StressJmxEngine extends BaseStressEngine{
             jmxFile = File.createTempFile("jmeter-script",".jmx");
 
             try(FileWriter fileWriter = new FileWriter(jmxFile)){
-                //读取远程文件写道本地jmxFile
+                //读取远程文件写到本地jmxFile
 
                 String url = fileService.getTempAccessFileUrl(stressCaseDO.getJmxUrl());
                 String content = CustomFileUtil.readRemoteFile(url);
