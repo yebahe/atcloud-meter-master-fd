@@ -32,7 +32,7 @@ public class KafkaResultSenderServiceImpl  implements ResultSenderService {
         //根据ReportTypeEnum发送到不同的方法
         switch (reportTypeEnum){
             case STRESS:
-                sendStressResult(caseInfoDTO,result);
+                sendStressResult(caseInfoDTO, result);
                 break;
             case API:
                 sendApiResult(caseInfoDTO,result);
