@@ -56,7 +56,6 @@ public class FileServiceImpl implements FileService {
         //代理类对行，为了使异步生效
         fileService.uploadFile(file, fileName);
         String url = minIOConfig.getEndpoint()+"/"+minIOConfig.getBucketName()+"/"+fileName;
-
         return url;
     }
 
@@ -72,10 +71,8 @@ public class FileServiceImpl implements FileService {
                 minioClient.putObject(PutObjectArgs.builder()
                                 .bucket(minIOConfig.getBucketName())
                                 .object(fileName)
-
                                 .stream(inputStream,file.getSize(),-1)
                                 .contentType(file.getContentType())
-
                                 .build());
 
 
